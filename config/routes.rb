@@ -1,3 +1,14 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/status', to: 'application#status'
+
+  get '/pets', to: 'application#pets'
+
+  get '/consoles', to: 'consoles#index'
 end
+
+
+
+
+
+
+
